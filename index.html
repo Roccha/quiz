@@ -20,30 +20,40 @@
     <h1>Quiz sobre a Bíblia</h1>
 
     <p> <strong>Ele foi considerado o maior profeta na Bíblia.</strong></p>
-    <button id="btn1" onclick="clicar1()">Paulo</button>
-    <button id="btn2" onclick="clicar2()">Judas</button>
-    <button id="btn3" onclick="clicar3()">Moisés</button>
-    <button id="btn4" onclick="clicar4()">Jesus</button>
-
+  
+    <input type="button" value="Paulo" id="paulo" onclick="clicar()">
+    
+    <input type="button" value="moises" id="moises" onclick="clicar()">
+    
+    <input type="button" value="Pedro" id="pedro" onclick="clicar()">
 <script>
-    function clicar1(){
-        var botao = document.getElementById('btn1', 'btn2').value;
+    function clicar(){
+      var paulo = document.getElementById('paulo')
 
-        var botao2 = document.getElementById('btn1', 'btn2').value;
-
+      var moises = document.getElementById('moises')
+       
+      var pedro = document.getElementById('pedro')
 
         var nome = "moises"
 
-        if( botao => nome ){
-        alert('Você errou, vai lê a Bíblia')
-            
+        if( nome === "moises" && nome === "paulo" && nome === "pedro"  ){
+            alert('Você acertou!');
         }else{
-            alert("Parabéns você acertou!");
+            alert('Você errou!')      
         }
         
 
 
+
+
     }
+   
+        
+
+        
+        
+
+
 
 
 
